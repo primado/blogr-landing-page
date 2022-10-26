@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+}
+
+header {
+    background-color: hsl(13, 100%, 72%);
+    border-radius: 0 0 0 5em;
+}
+
+nav {
+    font-family: 'Overpass', sans-serif;
+}
+
+.nav-brand a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5em;
+}
+
+.header-svg  {
+    height: 100%;
+    /* display: flex; */
+    background-image: url('/images/bg-pattern-intro-desktop.svg');
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%; 
+    -webkit-background-size: 100% 100%;
+    background-size:cover; 
+    background-position: center;
+}
+
+.nav-flex .nav-brand {
+    display: inline-flex;
+    padding: 2.5em;
+    margin-left: 2em;
+    
+}
+
+.nav-flex-list {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+
+}
+
+.nav-left .dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.nav-left .dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color:  hsl(0, 0%, 100%);
+}
+
+.nav-left .dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    color: hsl(228, 10%, 10%);
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+.nav-left .dropdown-content a:hover {
+    color: hsl(0, 0%, 0%);
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.nav-right {
+    margin-left: 35em;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    padding: .8em;
+    display: inline-block;
+}
+
+.nav-right .signup:hover {
+    background-color: hsla(0, 0%, 100%, 0.29);
+    border-radius: 15px;
+}
+
+
+/*******   Hero Main       *******/
+
+.hero-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-main .hero-text h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.8em;
+    font-weight: 500;
+    padding: .5em;
+}
+
+.hero-main .hero-text p {
+    font-size: 16px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 3em;
+}
+
+.hero-main .hero-call-action {
+    margin-bottom: 7em;
+}
+
+.hero-main .hero-call-action a {
+    padding: .7em;
+    margin: .5em;
+}
+
+.hero-main .hero-call-action .free {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(353, 100%, 62%);
+    text-decoration: none;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 15px;
+}
+
+.hero-main .hero-call-action .free:hover {
+    background-color: hsla(0, 0%, 100%, 0.29);
+    color: hsl(0, 0%, 100%);
+}
+
+.hero-main .hero-call-action .more {
+    background-color: hsla(0, 0%, 100%, 0.29);
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: 'Overpass', sans-serif;
+    border-radius: 15px;
+    font-weight: 600;
+
+}
+
+.hero-main .hero-call-action .more:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(353, 100%, 62%);
+    text-decoration: none;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 15px;
+}
