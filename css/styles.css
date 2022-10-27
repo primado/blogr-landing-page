@@ -184,3 +184,107 @@ nav {
     font-weight: 600;
     border-radius: 15px;
 }
+
+
+/****   Future Section    *******/
+
+#future {
+    background-color: hsl(0, 0%, 100%);
+    padding: 2em;
+}
+
+img {
+    width: 40em;
+    background-image: url('/images/illustration-laptop-desktop.svg/');
+    /* background-size: 50% 50%;  */
+    /* -o-background-size: 100% 100%; 
+    -webkit-background-size: 100% 100%; */
+    background-size: cover; 
+    background-position: center;
+    margin-top: -5em;
+}
+
+#future h1 {
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: hsl(208, 49%, 24%);
+    font-family: 'Overpass', sans-serif;
+    font-family: 600;
+}
+
+.future-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-wrapper {
+    color: hsl(208, 49%, 24%);
+    margin-top: -10em;
+    padding: 3em;
+}
+
+.desc-one,
+.desc-two {
+    /* padding-top: 60em;
+    margin-top: 30em; */
+   padding-bottom: 1em;
+}
+
+.desc-one h2, 
+.desc-two h2 {
+    font-size: 1.5em;
+    font-family: 'Overpass', sans-serif;
+    padding-bottom: .5em;
+    padding-top: .8em;
+    
+}
+
+.desc-one p, 
+.desc-two p {
+    font-family: 'Overpass', sans-serif;
+    font-size: .99em;
+    line-height: 1.7em;
+   
+
+}
+
+/***** End of Future Section ****/
+
+#state {
+    background-color: hsl(237, 17%, 21%);
+    height: 29em;
+
+}
+
+.state-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.state-text {
+    margin-top: -10em;
+}
+
+.state-text h1 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 2em;
+    text-align: left;
+    color: hsl(0, 0%, 100%);
+    padding-bottom: .8em;
+
+}
+
+.state-text p {
+    color: hsl(0, 0%, 100%);
+    line-height: 2em;
+}
+
+.state-text {
+    padding: 3em;
+}
+
+
