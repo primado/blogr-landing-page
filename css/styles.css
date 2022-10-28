@@ -193,7 +193,7 @@ nav {
     padding: 2em;
 }
 
-img {
+.future-svg img {
     width: 40em;
     background-image: url('/images/illustration-laptop-desktop.svg/');
     /* background-size: 50% 50%;  */
@@ -202,6 +202,7 @@ img {
     background-size: cover; 
     background-position: center;
     margin-top: -5em;
+    margin-right: -2em;
 }
 
 #future h1 {
@@ -228,9 +229,8 @@ img {
 
 .desc-one,
 .desc-two {
-    /* padding-top: 60em;
-    margin-top: 30em; */
-   padding-bottom: 1em;
+    margin: 1em;
+    padding-bottom: 1em;
 }
 
 .desc-one h2, 
@@ -247,6 +247,7 @@ img {
     font-family: 'Overpass', sans-serif;
     font-size: .99em;
     line-height: 1.7em;
+    
    
 
 }
@@ -256,6 +257,7 @@ img {
 #state {
     background-color: hsl(237, 17%, 21%);
     height: 29em;
+    border-radius: 0 5em 0 5em;
 
 }
 
@@ -287,4 +289,103 @@ img {
     padding: 3em;
 }
 
+/**** End of State Section *****/
+
+#laptop {
+    
+
+}
+
+.laptop-wrapper {
+    margin-top: 5em;
+    padding-bottom: 3em;
+}
+
+.laptop-flex img {
+    width: 52em;
+    margin-left: -7em;
+}
+
+.laptop-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.laptop-text
+.desc-one, .desc-two, h2 {
+    padding-top: 1em;
+    text-align: left;
+    padding-bottom: 1em;
+}
+
+.laptop-text
+.desc-one-laptop, .desc-two-laptop {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.laptop-text
+.desc-one-laptop, .desc-two-laptop, p {
+    padding: 0 0em;
+    line-height: 1.5em;
+    padding-left: 0em;
+    padding-right: 2em;
+}
+
+
+/****** End of Laptop Section *****/
+
+
+/******  Footer Section *****/
+
+footer {
+    background-color: hsl(240, 10%, 16%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 0 5em 0 0;
+}
+
+.footer-wrapper {
+    padding: 3em;
+    
+}
+
+.footer-text-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text-flex
+.ft-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8em;
+    margin-left: 5em;
+}
+
+.ft-column .column-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.ft-column
+.column-list a {
+    display: block;
+    padding: 1em;
+    margin-bottom: .5em;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.ft-column
+.column-list a:hover {
+    text-decoration: underline;
+}
+
+.footer-text-flex .connect {
+    margin-top: -3em;
+}
 
