@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 
-html, body {
+/* html, body {
     width: 100%;
-}
+} */
 
 header {
     background-color: hsl(13, 100%, 72%);
     border-radius: 0 0 0 5em;
+    min-width: 100vw;
+    overflow: hidden;
 }
 
 nav {
@@ -191,10 +193,12 @@ nav {
 #future {
     background-color: hsl(0, 0%, 100%);
     padding: 2em;
+    min-width: 100vw;
+    overflow: hidden;
 }
 
 .future-svg img {
-    width: 40em;
+    width: 35em;
     background-image: url('/images/illustration-laptop-desktop.svg/');
     /* background-size: 50% 50%;  */
     /* -o-background-size: 100% 100%; 
@@ -202,7 +206,7 @@ nav {
     background-size: cover; 
     background-position: center;
     margin-top: -5em;
-    margin-right: -2em;
+    margin-right: -1em;
 }
 
 #future h1 {
@@ -247,6 +251,7 @@ nav {
     font-family: 'Overpass', sans-serif;
     font-size: .99em;
     line-height: 1.7em;
+    color: hsl(237, 23%, 32%);
     
    
 
@@ -258,6 +263,8 @@ nav {
     background-color: hsl(237, 17%, 21%);
     height: 29em;
     border-radius: 0 5em 0 5em;
+    min-width: 100vw;
+    /* overflow: hidden; */
 
 }
 
@@ -292,8 +299,9 @@ nav {
 /**** End of State Section *****/
 
 #laptop {
-    
-
+    min-width: 100vw;
+    overflow: hidden;
+    font-family: 'Overpass', sans-serif;
 }
 
 .laptop-wrapper {
@@ -302,7 +310,7 @@ nav {
 }
 
 .laptop-flex img {
-    width: 52em;
+    width: 40em;
     margin-left: -7em;
 }
 
@@ -317,6 +325,7 @@ nav {
     padding-top: 1em;
     text-align: left;
     padding-bottom: 1em;
+    color:  hsl(237, 17%, 21%);
 }
 
 .laptop-text
@@ -331,6 +340,7 @@ nav {
     line-height: 1.5em;
     padding-left: 0em;
     padding-right: 2em;
+    color: hsl(237, 23%, 32%);
 }
 
 
@@ -344,6 +354,13 @@ footer {
     color: hsl(0, 0%, 100%);
     font-family: 'Ubuntu', sans-serif;
     border-radius: 0 5em 0 0;
+    min-width: 100vw;
+    overflow: hidden;
+}
+
+.footer-text-flex 
+.footer-brand h1 {
+    color: hsl(0, 0%, 100%);
 }
 
 .footer-wrapper {
@@ -365,6 +382,11 @@ footer {
     margin-left: 5em;
 }
 
+.footer-text-flex
+.ft-column h2 {
+    color: hsl(0, 0%, 100%);
+}
+
 .ft-column .column-list {
     display: flex;
     flex-direction: column;
@@ -375,7 +397,7 @@ footer {
     display: block;
     padding: 1em;
     margin-bottom: .5em;
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 17%, 95%);
     text-decoration: none;
     font-size: 16px;
 }

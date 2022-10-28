@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@300;600;700&family=Overpass:ital,wght@0,600;1,300&family=Poppins:wght@300;500&family=Red+Hat+Display:wght@500;700;900&family=Roboto:ital,wght@0,100;0,900;1,100;1,700;1,900&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- CSS-link -->
     <link rel="stylesheet" href="./css/styles.css" class="css">
     <title>Frontend Mentor | [Blogr]</title>
@@ -70,7 +74,8 @@
             </nav>
             </div>
             <div class="hero-main">
-                <div class="hero-text">
+                <div data-aos="zoom-in-down" data-aos-easing="linear"
+                data-aos-duration="1500" class="hero-text">
                     <h1>A modern publishing platform</h1>
                     <p>Grow your audience and build your online brand</p>
                 </div>
@@ -88,8 +93,9 @@
 
             <h1>Designed for the future</h1>
             <div class="future-wrapper">
-                <div class="text-wrapper">
-                    <div class="desc-one">
+                <div data-aos="fade-right" data-aos-offset="300"
+                data-aos-easing="ease-in-sine" class="text-wrapper">
+                    <div  class="desc-one">
                         <h2>Introducing an extensible editor</h2>
                         <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
                             The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
@@ -104,7 +110,8 @@
                     </div>
                 </div>
 
-                <div class="future-svg">
+                <div data-aos="fade-down" data-aos-easing="linear"
+                data-aos-duration="1500" class="future-svg">
                     <img src="/images/illustration-editor-desktop.svg" alt="">
                 </div>
             </div>
@@ -112,10 +119,12 @@
 
         <section id="state">
             <div class="state-wrapper">
-                <div class="state-flex">
-                    <img src="/images/illustration-phones.svg" alt="illustration of mobile phones">
+                <div  class="state-flex">
+                    <img data-aos="fade-down" data-aos-easing="linear"
+                    data-aos-duration="1500" src="/images/illustration-phones.svg" alt="illustration of mobile phones">
 
-                    <div class="state-text">
+                    <div data-aos="fade-left" data-aos-offset="500"
+                    data-aos-duration="500" class="state-text">
                         <h1>State of the Art Infrastructure</h1>
                         <p>With reliability and speed in mind, worldwide data centers provide the backbone <br> for ultra-fast connectivity. 
                             This ensures your site will load instantly, no matter <br> where your readers are, keeping your site competitive.
@@ -128,10 +137,12 @@
         <section id="laptop">
             <div class="laptop-wrapper">
                 <div class="laptop-flex">
-                    <img src="/images/illustration-laptop-desktop.svg" alt="laptop desktop">
+                    <img data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" src="/images/illustration-laptop-desktop.svg" alt="laptop desktop">
 
-                    <div class="laptop-text">
-                        <div class="desc-one-laptop">
+                    <div data-aos="fade-left" data-aos-offset="500"
+                    data-aos-duration="500" class="laptop-text">
+                        <div  class="desc-one-laptop">
                             <h2>Free, open, simple</h2>
                             <p>Blogr is a free and open source application backed by a large community of helpful <br> developers. It supports 
                                 features such as code syntax highlighting, RSS feeds, <br> social media integration, third-party commenting tools, 
@@ -139,7 +150,7 @@
                             </p>
                         </div>
 
-                        <div class="desc-two-laptop">
+                        <div  class="desc-two-laptop">
                             <h2> Powerful tooling</h2>
                             <p>Batteries included. We built a simple and straightforward CLI tool that makes <br> customization and deployment a breeze, but
                                 capable of producing even the <br> most complicated sites.
@@ -193,6 +204,11 @@
         </footer>
 
     </main>
+
+
+    <script>
+        AOS.init();
+    </script>
     
 </body>
 </html>
